@@ -79,18 +79,16 @@
 
 
 
-<meta name="description" content="$\sum{3x^n}$">
+<meta name="description" content="数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已机器学习算法可以看作统计方法，也就是数学公式算法分类 有监督学习 (有特征值，目标值) 分类问题 （如，人脸识别） 回归问题 （目标值连续）   无监督学习（有特征值，无目标值） 聚类 （k-means）开发流程   获取数据 学习用数据集 sklearn kaggle uci     数据处理 特征工程 机器学习算法训练 —&gt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="machine learning">
+<meta property="og:title" content="机器学习 总结">
 <meta property="og:url" content="http://yoursite.com/2020/07/29/myai/index.html">
 <meta property="og:site_name" content="影子跟读器">
-<meta property="og:description" content="$\sum{3x^n}$">
-<meta property="og:image" content="http://yoursite.com/2020/07/29/myai/xiamu.jpeg">
+<meta property="og:description" content="数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已机器学习算法可以看作统计方法，也就是数学公式算法分类 有监督学习 (有特征值，目标值) 分类问题 （如，人脸识别） 回归问题 （目标值连续）   无监督学习（有特征值，无目标值） 聚类 （k-means）开发流程   获取数据 学习用数据集 sklearn kaggle uci     数据处理 特征工程 机器学习算法训练 —&gt;">
 <meta property="article:published_time" content="2020-07-28T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-07-28T16:57:50.666Z">
+<meta property="article:modified_time" content="2020-08-02T15:14:10.647Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/07/29/myai/xiamu.jpeg">
 
 
 
@@ -126,7 +124,7 @@
 
 
 
-  <title>machine learning | 影子跟读器</title>
+  <title>机器学习 总结 | 影子跟读器</title>
   
 
 
@@ -250,7 +248,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">machine learning</h1>
+          <h1 class="post-title" itemprop="name headline">机器学习 总结</h1>
         
 
         <div class="post-meta">
@@ -300,8 +298,113 @@
       
 
       
-        <p>$\sum{3x^n}$</p>
-<p><img src="/2020/07/29/myai/xiamu.jpeg" alt="GitHub Logo"></p>
+        <h2 id="数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已"><a href="#数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已" class="headerlink" title="数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已"></a>数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已</h2><h3 id="机器学习算法可以看作统计方法，也就是数学公式"><a href="#机器学习算法可以看作统计方法，也就是数学公式" class="headerlink" title="机器学习算法可以看作统计方法，也就是数学公式"></a>机器学习算法可以看作统计方法，也就是数学公式</h3><h4 id="算法分类"><a href="#算法分类" class="headerlink" title="算法分类"></a>算法分类</h4><ul>
+<li>有监督学习 (有特征值，目标值)<ul>
+<li>分类问题 （如，人脸识别）</li>
+<li>回归问题 （目标值连续）</li>
+</ul>
+</li>
+<li>无监督学习（有特征值，无目标值）<ul>
+<li>聚类 （k-means）<h4 id="开发流程"><a href="#开发流程" class="headerlink" title="开发流程"></a>开发流程</h4></li>
+</ul>
+</li>
+<li>获取数据<ul>
+<li>学习用数据集<ul>
+<li>sklearn</li>
+<li>kaggle</li>
+<li>uci</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>数据处理</li>
+<li>特征工程</li>
+<li>机器学习算法训练 —&gt; 模型</li>
+<li>模型评估</li>
+<li>应用</li>
+</ul>
+<h4 id="特征工程（feature-engineering）"><a href="#特征工程（feature-engineering）" class="headerlink" title="特征工程（feature engineering）"></a>特征工程（feature engineering）</h4><h6 id="sklearn-特征工程"><a href="#sklearn-特征工程" class="headerlink" title="sklearn 特征工程"></a>sklearn 特征工程</h6><h6 id="pandas-数据清洗-数据处理"><a href="#pandas-数据清洗-数据处理" class="headerlink" title="pandas 数据清洗 数据处理"></a>pandas 数据清洗 数据处理</h6><ul>
+<li>特征抽取（特征提取）：特征值化，更方便处理<ul>
+<li>文本类型 -》数值 （one hot 编码  稀疏矩阵）</li>
+<li>类型 -》 数值 （one hot 编码 稀疏矩阵）</li>
+<li>字典特征提取<br>  sklearn.feature_extraction.DictVectorizer</li>
+<li>文本特征提取</li>
+<li>图像特征提取（深度学习）</li>
+</ul>
+</li>
+<li>特征预处理<br>  数值型数据无量纲化<ul>
+<li>归一化 （线性面积的占比，乘与缩放区间的大小 ）<br>弊端：异常值影响大</li>
+<li>标准化</li>
+</ul>
+</li>
+<li>特征降维（降低特征的个数）<ul>
+<li>特征选择<ul>
+<li>Filter（过滤式）特征本身 特征与特征和目标值之间的关联<ol>
+<li>方差选择法 （低方差特征过滤 单个特征内）</li>
+<li>相关系数法 （特征与特征之间的相关程度）<br> 特征与特征间相关性很高：<br> 1）选取其中一个<br> 2）加权求和<br> 3）主成分分析 PCA<br> 高维数据转化成低维数据，期间可能会舍弃原有数据，创造新的变量</li>
+</ol>
+</li>
+<li>Embeded（嵌入式）算法自动选择特征 （特征与目标值之间的关联）<ol>
+<li>决策树</li>
+<li>正则化</li>
+<li>深度学习<h4 id="分类算法"><a href="#分类算法" class="headerlink" title="分类算法"></a>分类算法</h4></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>sklearn转化器 Transformer<br>是特征工程的父类，用来做特征工程</li>
+<li>sklearn估计器 Estimator<br>KNN<br>朴素贝叶斯 （常用来做文本分类）<br>决策树<br>集成学习方法<br>随机森林<ul>
+<li>训练集随机<br>bootstrap 随机有放回抽样</li>
+<li>特征随机<h4 id="模型选择和调优"><a href="#模型选择和调优" class="headerlink" title="模型选择和调优"></a>模型选择和调优</h4></li>
+</ul>
+</li>
+<li>交叉验证</li>
+<li>超参数搜索 网格搜索<h4 id="回归算法"><a href="#回归算法" class="headerlink" title="回归算法"></a>回归算法</h4></li>
+<li>逻辑回归<br>解决二分类问题的利器<br>线性回归的输出就是逻辑回归的输入<br>将线性回归的输出代入激活函数（sigmoid）<ul>
+<li>损失函数<br>对数似然损失</li>
+<li>优化<br>梯度下降</li>
+<li>精确率（precision） 召回率（recall）</li>
+</ul>
+</li>
+<li>线性回归<br>线性模型（自变量一次 或者 参数一次的变量多次的 都叫线性模型）<br>线性关系一定是线性模型 线性模型不一定是线性关系<ul>
+<li>损失函数<br>最小二乘法</li>
+<li>优化损失<ul>
+<li>正规方程<br>直接求w<br>求解慢<br>不能解决拟合问题</li>
+<li>梯度下降<br>数据量多的时候适合用<br>灵活性高<br>通用性强</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>回归性能评估<ul>
+<li>均方误差<h4 id="欠拟合和过拟合"><a href="#欠拟合和过拟合" class="headerlink" title="欠拟合和过拟合"></a>欠拟合和过拟合</h4></li>
+</ul>
+</li>
+<li>欠拟合 underfit<br>训练集表现的不好，测试集表现也不好，模型过于简单</li>
+<li>过拟合 overfit<br>训练集表现的好，测试集表现差，模型过于复杂<ul>
+<li>解决 （损失函数 + 惩罚项）<br>损失函数，通过正则化，减少高次项的影响<ul>
+<li>L1<br>LASSO</li>
+<li>L2<br>岭回归（也是一种线性回归）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>拟合 fit</li>
+</ul>
+<h4 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h4><p>不需要人工特征提取</p>
+<ul>
+<li>神经网络<br>  主要用途在于分类<ul>
+<li>感知机（相当于逻辑回归）</li>
+<li>softmax 多分类问题</li>
+<li>损失函数<br>交叉熵损失</li>
+</ul>
+</li>
+</ul>
+<h4 id="模型转换相关"><a href="#模型转换相关" class="headerlink" title="模型转换相关"></a>模型转换相关</h4><ul>
+<li>模型信息显示<br>  <a href="https://lutzroeder.github.io/netron/" target="_blank" rel="noopener">https://lutzroeder.github.io/netron/</a></li>
+<li>saved_model_cli<br>  显示savedmodel信息，比如outputnode</li>
+</ul>
 
       
     </div>
@@ -335,10 +438,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/07/29/2020-7-29-%E6%9C%BA%E5%99%A8/" rel="prev" title="机器">
-                机器 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -390,8 +489,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -406,7 +514,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -433,6 +541,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已"><span class="nav-number">1.</span> <span class="nav-text">数据和特征决定了机器学习的上限，而模型和算法只是逼近这个上限而已</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#机器学习算法可以看作统计方法，也就是数学公式"><span class="nav-number">1.1.</span> <span class="nav-text">机器学习算法可以看作统计方法，也就是数学公式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算法分类"><span class="nav-number">1.1.1.</span> <span class="nav-text">算法分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开发流程"><span class="nav-number">1.1.2.</span> <span class="nav-text">开发流程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特征工程（feature-engineering）"><span class="nav-number">1.1.3.</span> <span class="nav-text">特征工程（feature engineering）</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#sklearn-特征工程"><span class="nav-number">1.1.3.0.1.</span> <span class="nav-text">sklearn 特征工程</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#pandas-数据清洗-数据处理"><span class="nav-number">1.1.3.0.2.</span> <span class="nav-text">pandas 数据清洗 数据处理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分类算法"><span class="nav-number">1.1.4.</span> <span class="nav-text">分类算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#模型选择和调优"><span class="nav-number">1.1.5.</span> <span class="nav-text">模型选择和调优</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回归算法"><span class="nav-number">1.1.6.</span> <span class="nav-text">回归算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#欠拟合和过拟合"><span class="nav-number">1.1.7.</span> <span class="nav-text">欠拟合和过拟合</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#深度学习"><span class="nav-number">1.1.8.</span> <span class="nav-text">深度学习</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#模型转换相关"><span class="nav-number">1.1.9.</span> <span class="nav-text">模型转换相关</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
